@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>后代选择器</title>
+		<style type="text/css">
+			/*下面的代码含义是以div为起点，将它作为一个祖先元素，
+			 * 查找后代里标签名字叫span的元素*/
+			div span{
+				color:aquamarine;
+			}
+		</style>
+	</head>
+	<body>
+		<div>
+			<p>
+				<span>我是孙子辈SPAN</span>
+			</p>
+			<span>我是儿子辈SPAN</span>
+		</div>
+	</body>
+</html>

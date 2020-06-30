@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>表单练习</title>
+	</head>
+	<body>
+		<form action="#" method="post">
+			<!--value属性可以添加在所有的表单元素，只不过有的表单元素不做展示
+				一般起作用的value属性常见于用户可以手动输入文本内容的表单元素
+			-->
+			用户名：<input type="text" name="username"/>
+			<br /><br />
+			密码框：<input type="password" name="mima"/>
+			<br/><br />
+			<input type="submit"/>
+			<br /><br />
+			<!--单选框中加入name 属性，可以将当前的单选框设置为一组，即只能选择一个，不会出现选择多个的情况
+				checked属性则设置哪个单选框的值为默认值，它的属性值也是checked，所以可以省略不写
+			-->
+			单选框：<input type="radio" name="sex"/>男
+			       <input type="radio" name="sex" checked/>女
+			       <br /><br />
+			复选框：<input type="checkbox" checked="checked" />学习
+			       <input type="checkbox" checked/>运动
+			       <input type="checkbox"/>旅游
+			       <br /><br />
+			文本域：<textarea name="" rows="20" cols="20"></textarea>
+			<br /><br />
+			下拉菜单：
+			<select name="">
+				<option value="">html</option>
+				<option value="">css</option>
+				<option value="">js</option>
+				<option value="">python</option>
+			</select>
+			<br /><br />
+			重置按钮：<input type="reset" value="重置按钮"/>
+			<br /><br />
+			普通按钮：<input type="button" value="点击"/>
+			<br /><br />
+			<input type="submit" value="点击提交数据"/>
+		</form>
+	</body>
+</html>

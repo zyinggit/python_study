@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			body{
+				/*
+				 * text-align只能设置文字在当前元素中水平的对其方式
+				 * 将其写在body元素中，可设置行内元素、图片、*/
+				text-align:center ;
+			}
+			.box{
+				width: 300px;
+				/*下面的写法可以是固定的技巧，可以让一个已知宽度的盒子水平居中显示*/
+				margin:100px auto;
+				background: orange;
+			}
+			/*在定义样式时一般不建议用id选择器，id留给js效果或者后台取数据*/
+			.txt{
+				width:200px;
+				height:30px;
+			}
+			.two{
+				color:#000;
+			}
+			.box1{
+				margin-bottom: 10px;
+			}
+			.box2{
+				margin-top: 10px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box">
+		<img src="img/logo.jpg" alt="" />
+		<br />
+		<div class="box1">
+			<a href="#">新闻</a>
+		    <a href="#" class="two">网页</a>
+			<a href="#">贴吧</a>
+			<a href="#">知道</a>
+			<a href="#">音乐</a>
+			<a href="#">图片</a>	
+			<a href="#">视频</a>	
+			<a href="#">地图</a>
+		</div>
+		<form action="#" method="post">
+		<input type="text" class="txt"/>
+		<input type="button" value="提交" />
+		</form>
+		<div class="box2">
+			<a href="#">新闻</a>
+		    <a href="#" class="two">网页</a>
+			<a href="#">贴吧</a>
+			<a href="#">知道</a>
+			<a href="#">音乐</a>
+			<a href="#">图片</a>	
+			<a href="#">视频</a>	
+			<a href="#">地图</a>
+		</div>
+		</div>
+	</body>
+</html>
