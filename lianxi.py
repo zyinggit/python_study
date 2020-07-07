@@ -72,4 +72,59 @@ if len(username)>=5 and len(username)<=8:
 else:
     print("要求账号长度5-8位！")
 """
+ 
+"""
+#if语句——猜拳游戏
+#1、用户输入一个石头（0）、剪刀（1）、布（2）
+#2、电脑产生一个石头（0）、剪刀（1）、布（2） 随机产生
+#3、判断胜负
 
+import random
+user_quan=int(input("请出拳石头（0）、剪刀（1）、布（2）："))
+computer_quan=random.randint(0,2)
+if (user_quan==0 and computer_quan==1) or (user_quan==1 and computer_quan==2) or (user_quan==2 and computer_quan==0):
+    print("你赢了！")
+elif(user_quan==computer_quan):
+    print("平局")
+else:
+    print("你输了！")
+"""
+
+"""
+i=1
+total=0
+# while i<=100:
+#     total=total+i
+#     i=i+1
+# print("1-100的累加和为：",total)
+while i<=100:
+    if i%2==1:
+        total=total+i
+    i=i+1
+print("1-100的奇数之和为：",total)
+"""
+"""
+#计算1-100的累加和，并且去除50
+i=1
+sum=0
+while i<=100:
+    if i==50:
+        i=i+1#一定要有这一句，否则会陷入死循环
+        continue
+    sum=sum+i
+    i=i+1
+print("1-100的累加和（去除50）为:%d"%sum)
+"""
+
+"""
+#打印星星
+# *
+# **
+# ***
+# ****
+# *****
+i=1
+while i<=5:
+    print("*"*i)
+    i=i+1
+"""
