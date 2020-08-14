@@ -18,24 +18,6 @@ print(list2)
 """
 
 """
-#冒泡排序
-def bubble_sort(alist):
-    n=len(alist)
-    for j in range(0,n-1):
-        count=0
-        for i in range(0,n-1-j):
-            if alist[i]>alist[i+1]:
-                alist[i],alist[i+1]=alist[i+1],alist[i]
-                count+=1
-        if count==0:
-            return
-if __name__=="__main__":
-    alist=[54,26,93,17,31,44,55,20]
-    bubble_sort(alist)
-    print(alist)
-"""
-
-"""
 #斐波那契数列 1、1、2、3、5、8、13、21、34...
 #递归法 返回idx的值，缺点：只能返回某个值
 def fib1(idx):
@@ -111,6 +93,7 @@ print(res1)
 print(res2)
 """
 
+"""
 #存在一个数列 0 1 1 2 3 5 8 13 21 33 55 89 144 233 377...
 #描述数列中的规律，此数据存在一处错误，请找出 
 #从第三个数起，后面的数是前面两个数之和 错误处：33，应该是 34
@@ -119,3 +102,4 @@ print(0,end=" ")
 while b<377:
      a,b=b,a+b 
      print(b,end=" ")
+"""
