@@ -128,3 +128,38 @@ while i<=5:
     print("*"*i)
     i=i+1
 """
+
+"""
+#有一邮箱地址如下:user_email = 'simagousheng@itcast.cn'
+#希望从邮箱地址字符串中获取用户名和邮箱后缀名
+#字符串的方法练习
+#方式一：
+user_email = 'simagousheng@itcast.cn'
+position=user_email.find('@') # 查找 @ 位置
+username=user_email[0:position] # 根据 postion 截取用户名和邮箱后缀
+houzhui=user_email[position+1:]
+print("该邮箱用户名为：",username)
+print("邮箱后缀为：",houzhui)
+#方式二
+user_email2= 'simagousheng2@itcast.cn'
+at_count=user_email2.count('@') # 判断 user_email 是否有多个 @
+if at_count>1:
+    print('邮箱地址不合法, 出现了多个@符号!')
+else:
+    result=user_email2.split('@')  # 根据 @ 将字符串截取为多个部分
+print("用户名为：",result[0])
+print("后缀为：",result[1])
+"""
+
+"""
+#注册的处理流程
+#获取用户注册注册名
+name=input("请输入注册名称：")
+#去除用户名两侧的空格
+name=name.strip()
+#判断字符串是否全部为字母
+if not name.isalpha():
+    print("注册失败！用户名必须全为字母！")
+else:
+    print(name,"注册成功！")
+"""
